@@ -2,8 +2,13 @@
   margin-top: 20px;
   color: #c5ffff;
   text-align: center;
-  margin-bottom: 30px;
   font-size: 60px;
+}
+
+.home h3 {
+  color: #c5ffff;
+  text-align: center;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 1000px) {

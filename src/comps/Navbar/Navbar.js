@@ -4,7 +4,7 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <div className="nav">
-      <HashLink smooth to="/#top">
+      <HashLink smooth to="/#top"  title="RinzHighlights">
         <img src="/logo.png" className="logo" alt="Back Home btn" />
       </HashLink>
       <form className="search" action="/search/" method="get">

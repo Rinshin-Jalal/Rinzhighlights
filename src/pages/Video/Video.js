@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import parse from "html-react-parser";
 import "./Video.css";
 import Highlights from "../../comps/Highlights/Highlights";
+import  Helmet from "react-helmet";
 
 const Video = ({ highlights }) => {
   const id = useParams();
@@ -16,6 +17,9 @@ const Video = ({ highlights }) => {
         )
         .map((fhighlight, index) => (
           <div className="main" id="top" key={index}>
+            <Helmet>
+              <title>{fhighlight.title} | RinzHighlights</title>
+            </Helmet>
             <h1>{fhighlight.title}</h1>
             <p>
               {fhighlight.competition} |{" "}
@@ -31,7 +35,7 @@ const Video = ({ highlights }) => {
             </div>
           </div>
         ))}
-      <h2 className="more">Latest highlights👇</h2>
+      <h2 className="more">Recent highlights👇</h2>
       <Highlights
         highlights={highlights
           .filter(

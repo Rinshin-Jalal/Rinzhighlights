@@ -33,6 +33,7 @@ function App() {
             <h1>404</h1>
           </Route>
         </Switch>
+        {/* <h4 style={{ color:"aqua",textAlign:"right"}}>by Rinshin Jalal</h4> */}
       </div>
     </Router>
   );
