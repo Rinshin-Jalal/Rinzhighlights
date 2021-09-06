@@ -19,9 +19,9 @@ const Video = ({ highlights }) => {
           .map((fhighlight, index) => (
             <div className="main" key={index}>
               <Helmet>
-                <title  id="top">{fhighlight.title} | RinzHighlights</title>
+                <title>{fhighlight.title} | RinzHighlights</title>
               </Helmet>
-              <h1>{fhighlight.title}</h1>
+              <h1   id="top">{fhighlight.title}</h1>
               <p>
                 {fhighlight.competition} |{" "}
                 <span>{fhighlight.date.slice(0, 10)}</span>
