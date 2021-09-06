@@ -2,7 +2,7 @@ import qs from "qs";
 import { useLocation } from "react-router-dom";
 import Highlights from "../../comps/Highlights/Highlights";
 import { useState, useEffect } from "react";
-import Helmet from "react-helmet"
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const Search = ({ highlights }) => {
   let se = qs.parse(useLocation().search, { ignoreQueryPrefix: true }).q;
@@ -30,13 +30,15 @@ const Search = ({ highlights }) => {
   }, [filteredHighlights.length, se]);
 
   return (
-    <div className="search">
-      <Helmet>
-        <title>Search: {se} | RinzHighlights</title>
-      </Helmet>
-      <h1 style={{ color: "#fff", textAlign: "center" }}>{results}</h1>
-      <Highlights highlights={filteredHighlights} />
-    </div>
+    <HelmetProvider>
+      <div className="search">
+        <Helmet>
+          <title>Search: {se} | RinzHighlights</title>
+        </Helmet>
+        <h1 style={{ color: "#fff", textAlign: "center" }}>{results}</h1>
+        <Highlights highlights={filteredHighlights} />
+      </div>
+    </HelmetProvider>
   );
 };
 

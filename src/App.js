@@ -33,7 +33,11 @@ function App() {
             <h1>404</h1>
           </Route>
         </Switch>
-        {/* <h4 style={{ color:"aqua",textAlign:"right"}}>by Rinshin Jalal</h4> */}
+        <a href="https://www.rinzhin.net">
+          <h4 style={{ color: "rgb(197,255,255)", textAlign: "right" }}>
+            by Rinshin Jalal
+          </h4>
+        </a>
       </div>
     </Router>
   );

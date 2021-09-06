@@ -4,7 +4,7 @@ import Helmet from "react-helmet";
 
 const Home = ({ highlights }) => {
   return (
-    <div className="home" id="top">
+    <div className="home">
       <Helmet>
         <meta
           name="description"
@@ -24,7 +24,7 @@ const Home = ({ highlights }) => {
           content="Watch latest soccer highlights via RinzHighlights"
         />
       </Helmet>
-      <h1>RinzHighlights</h1>
+      <h1  id="top">RinzHighlights</h1>
       <h3>Latest Soccer Highlights</h3>
       <Highlights highlights={highlights} />
     </div>
