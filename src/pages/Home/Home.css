@@ -1,0 +1,20 @@
+.home h1 {
+  margin-top: 20px;
+  color: #c5ffff;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 60px;
+}
+
+@media screen and (max-width: 1000px) {
+  .home h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home h1 {
+    font-size: 30px;
+  }
+}
+/*# sourceMappingURL=Home.css.map */

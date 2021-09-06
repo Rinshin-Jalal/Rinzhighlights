@@ -1,0 +1,58 @@
+.highlights {
+  padding: 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  .highlight {
+    text-align: left;
+    background: rgb(0, 0, 0);
+    color: white;
+    p {
+      span {
+        color: rgb(133, 133, 133);
+      }
+    }
+
+    img {
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+}
+
+.big {
+  font-size: 70px;
+  color: antiquewhite;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .highlights {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .highlights {
+    display: grid;
+    grid-template-columns: auto;
+
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}

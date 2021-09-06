@@ -1,0 +1,49 @@
+.videodiv {
+  color: white;
+
+  .home {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 1000;
+  }
+
+  h2.more {
+    text-align: center;
+  }
+
+  .main {
+    margin: 0 auto;
+    max-width: 800px;
+    background: rgb(0, 0, 0);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    span {
+      color: rgb(133, 133, 133);
+    }
+    .videos {
+      .video {
+        video {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .videodiv {
+    .main {
+      margin-top: 60px;
+      padding: 10px;
+      border-radius: 10px;
+
+      h2 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

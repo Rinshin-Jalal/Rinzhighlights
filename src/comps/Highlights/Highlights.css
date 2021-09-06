@@ -1,0 +1,64 @@
+.highlights {
+  padding: 20px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  gap: 20px;
+}
+
+.highlights .highlight {
+  text-align: left;
+  background: black;
+  color: white;
+}
+
+.highlights .highlight p span {
+  color: #858585;
+}
+
+.highlights .highlight img {
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.big {
+  font-size: 70px;
+  color: antiquewhite;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .highlights {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  .highlights h2 {
+    font-size: 20px;
+  }
+  .highlights p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .highlights {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .highlights h2 {
+    font-size: 20px;
+  }
+  .highlights p {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=Highlights.css.map */

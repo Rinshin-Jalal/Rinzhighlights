@@ -1,0 +1,46 @@
+.videodiv {
+  color: white;
+}
+
+.videodiv .home {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 1000;
+}
+
+.videodiv h2.more {
+  text-align: center;
+}
+
+.videodiv .main {
+  margin: 0 auto;
+  max-width: 800px;
+  background: black;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-bottom: 3px solid white;
+}
+
+.videodiv .main span {
+  color: #858585;
+}
+
+.videodiv .main .videos .video video {
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .videodiv .main {
+    margin-top: 60px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .videodiv .main h2 {
+    font-size: 20px;
+  }
+  .videodiv .main p {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=Video.css.map */

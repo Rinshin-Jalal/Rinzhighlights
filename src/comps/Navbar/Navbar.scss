@@ -1,0 +1,39 @@
+.nav {
+  width: 100%;
+  background: rgb(19, 19, 19);
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  .search {
+    input {
+      border-bottom: 3px solid #000000;
+      position: absolute;
+      top: 10px;
+      right: 50px;
+      font-size: 30px;
+      width: 30%;
+      min-width: 250px;
+      height: 40px;
+      border: none;
+      outline: none;
+      background: rgba($color: #000000, $alpha: 0);
+      color: white;
+    }
+    button {
+      text-decoration: none;
+      border: none;
+      background: none;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  }
+
+  img.logo {
+    position: absolute;
+    width: 60px;
+    top: 0px;
+  }
+}
